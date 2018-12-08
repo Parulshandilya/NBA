@@ -18,3 +18,15 @@ tar xfz ~/Downloads/eclipse-inst-linux64.tar.gz
 ~/Downloads/eclipse-installer/eclipse-inst
 
 Use the onscreen instructions to complete the installer.. Accept the default installation directory and continue
+
+
+Right click on project
+build path
+Add external archives
+
+
+https://dev.mysql.com/downloads/connector/j/
+platform independent
+
+mysql-connector-java-8.0.13.zip
+Download Link: https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.0.13.zip
