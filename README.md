@@ -10,7 +10,7 @@ Now that Java JDK 8 is installed, got and download Eclipse Oxygen IDE package fo
 
 https://www.eclipse.org/downloads/
 
-Step 3: Install Eclipse IDE
+## Step 3: Install Eclipse IDE
 
 Use the commands below to extract the content in the  ~/Downloads folder… The next line launches the installer…
 
