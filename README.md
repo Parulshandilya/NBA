@@ -47,3 +47,5 @@ If you don’t have Java installed on your system or installed a lower version, 
 sudo apt-get update
 sudo apt-get install default-jdk
 
+Download Tomcat From here: http://mirrors.estointernet.in/apache/tomcat/tomcat-7/v7.0.92/bin/apache-tomcat-7.0.92.tar.gz
+
