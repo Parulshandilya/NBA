@@ -100,3 +100,4 @@ https://www.youtube.com/watch?v=HYSrsxhyEik&index=34&list=PLsyeobzWxl7pUPF2xjjJi
 
 https://www.codejava.net/java-ee/servlet/eclipse-file-upload-servlet-with-apache-common-file-upload
 https://www.journaldev.com/1964/servlet-upload-file-download-example
+https://www.quora.com/How-do-I-create-a-basic-login-and-register-page-in-HTML
