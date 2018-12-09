@@ -30,3 +30,20 @@ platform independent
 
 mysql-connector-java-8.0.13.zip
 Download Link: https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.0.13.zip
+
+
+Step 1 – Java Installation
+
+You must have Java installed on the system before installing Apache Tomcat on a Linux VPS. Tomcat 9 required Java 8 or later version to work. You can check and verify that Java is installed with the right version.
+
+java -version
+
+java version "1.8.0_144"
+Java(TM) SE Runtime Environment (build 1.8.0_144-b01)
+Java HotSpot(TM) 64-Bit Server VM (build 25.144-b01, mixed mode)
+
+If you don’t have Java installed on your system or installed a lower version, run below commands to satisfy requirements.
+
+sudo apt-get update
+sudo apt-get install default-jdk
+
