@@ -52,7 +52,7 @@ If you don’t have Java installed on your system or installed a lower version, 
 
 sudo apt-get update
 sudo apt-get install default-jdk
-
+# Installing Tomcat
 ## Step1
 Download Tomcat From here: http://mirrors.estointernet.in/apache/tomcat/tomcat-7/v7.0.92/bin/apache-tomcat-7.0.92.tar.gz
 ## Step2
@@ -87,5 +87,11 @@ https://www.youtube.com/watch?v=D0OfTZuIDcs
 https://help.eclipse.org/neon/index.jsp?topic=%2Forg.eclipse.stardust.docs.wst%2Fhtml%2Fwst-integration%2Fconfiguration.html
 
 reference for login page , connecting mysql database with login page
+Help:
+
 https://www.youtube.com/watch?v=HYSrsxhyEik&index=34&list=PLsyeobzWxl7pUPF2xjjJiG4BKC9x_GY46
 
+# Code
+File->New->Dynamic Web Project
+Write Project Name
+In your project in JavaScript Resources right click in webContent new JSP File
