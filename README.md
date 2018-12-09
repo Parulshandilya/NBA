@@ -67,4 +67,6 @@ sudo ln -s /var/lib/tomcat7/conf conf
 sudo ln -s /tc/tomcat7/policy.d/03catalina.policy/conf/catalina.policy
 sudo ln -s /var/log/tomcat7 log
 sudo chmod -R 777 /usr/local/tomcat/apache*/conf
+## Step7
+Start eclipse and from windows->prefferences->server select tomcat
 
