@@ -1,10 +1,10 @@
 # NBA-Accreditition-Report-Generation
 
 Group Members:
-Parul Shandilya
-Priyansi Singh
-Komal Kungwani
-Amisha Gupta
+###### Parul Shandilya
+###### Priyansi Singh
+###### Komal Kungwani
+###### Amisha Gupta
 
 https://websiteforstudents.com/how-to-install-eclipse-oxygen-ide-on-ubuntu-167-04-17-10-18-04/
 ## Step 1: Install Java JDK8
