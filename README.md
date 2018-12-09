@@ -17,8 +17,8 @@ Use the commands below to extract the content in the  ~/Downloads folder… The 
 tar xfz ~/Downloads/eclipse-inst-linux64.tar.gz
 ~/Downloads/eclipse-installer/eclipse-inst
 
+for the packages you need to install to have eclipse IDE for java EE developers 
 Use the onscreen instructions to complete the installer.. Accept the default installation directory and continue
-
 
 Right click on project
 build path
@@ -47,16 +47,22 @@ If you don’t have Java installed on your system or installed a lower version, 
 sudo apt-get update
 sudo apt-get install default-jdk
 
-Step1
+## Step1
 Download Tomcat From here: http://mirrors.estointernet.in/apache/tomcat/tomcat-7/v7.0.92/bin/apache-tomcat-7.0.92.tar.gz
+## Step2
 Extract the tar file
+## Step3
 Now make a directory at usr/local/tomcat
 sudo mkdir /usr/local/tomcat
+## Step4
 move the extracted file to the directory
 sudo mv apache-tomcat-7.0.92 /usr/local/tomcat
+## Step5
 Move to that directory
 cd /usr/local/tomcat
 cd /usr/local/tomcat/apache-tomcat-7.0.92
+## Step6
+Run these commands
 sudo ln -s /var/lib/tomcat7/conf conf
 sudo ln -s /tc/tomcat7/policy.d/03catalina.policy/conf/catalina.policy
 sudo ln -s /var/log/tomcat7 log
