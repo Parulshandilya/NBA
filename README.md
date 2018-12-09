@@ -82,7 +82,10 @@ sudo chmod -R 777 /usr/local/tomcat/apache*/conf
 ###### 5  Click Next. 
 ###### 6  Browse to the folder of your Tomcat installation. (or type /usr/local/tomcat/apace-tomcat-7.0.92)
 ###### 7  Select Finish.
-Refference
+Reference
 https://www.youtube.com/watch?v=D0OfTZuIDcs
 https://help.eclipse.org/neon/index.jsp?topic=%2Forg.eclipse.stardust.docs.wst%2Fhtml%2Fwst-integration%2Fconfiguration.html
+
+reference for login page , connecting mysql database with login page
+https://www.youtube.com/watch?v=HYSrsxhyEik&index=34&list=PLsyeobzWxl7pUPF2xjjJiG4BKC9x_GY46
 
