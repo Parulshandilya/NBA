@@ -70,3 +70,6 @@ sudo chmod -R 777 /usr/local/tomcat/apache*/conf
 ## Step7
 Start eclipse and from windows->prefferences->server select tomcat
 
+Refference
+https://www.youtube.com/watch?v=D0OfTZuIDcs
+
