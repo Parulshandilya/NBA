@@ -67,9 +67,18 @@ sudo ln -s /var/lib/tomcat7/conf conf
 sudo ln -s /tc/tomcat7/policy.d/03catalina.policy/conf/catalina.policy
 sudo ln -s /var/log/tomcat7 log
 sudo chmod -R 777 /usr/local/tomcat/apache*/conf
-## Step7
-Start eclipse and from windows->prefferences->server select tomcat
+
+## Step7 Configuring the Server
+From the Eclipse main menu choose File > New > Other...
+Select Server > Server.
+Click Next. 
+Select Tomcat vx.x Server
+Click Next. 
+Browse to the folder of your Tomcat installation.
+(or type /usr/local/tomcat/apace-tomcat-7.0.92)
+Select Finish.
 
 Refference
 https://www.youtube.com/watch?v=D0OfTZuIDcs
+https://help.eclipse.org/neon/index.jsp?topic=%2Forg.eclipse.stardust.docs.wst%2Fhtml%2Fwst-integration%2Fconfiguration.html
 
