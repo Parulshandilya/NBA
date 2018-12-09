@@ -48,4 +48,16 @@ sudo apt-get update
 sudo apt-get install default-jdk
 
 Download Tomcat From here: http://mirrors.estointernet.in/apache/tomcat/tomcat-7/v7.0.92/bin/apache-tomcat-7.0.92.tar.gz
+Extract the tar file
+Now make a directory at usr/local/tomcat
+sudo mkdir /usr/local/tomcat
+move the extracted file to the directory
+sudo mv apache-tomcat-7.0.92 /usr/local/tomcat
+Move to that directory
+cd /usr/local/tomcat
+cd /usr/local/tomcat/apache-tomcat-7.0.92
+sudo ln -s /var/lib/tomcat7/conf conf
+sudo ln -s /tc/tomcat7/policy.d/03catalina.policy/conf/catalina.policy
+sudo ln -s /var/log/tomcat7 log
+sudo chmod -R 777 /usr/local/tomcat/apache*/conf
 
