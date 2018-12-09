@@ -92,6 +92,6 @@ Help:
 https://www.youtube.com/watch?v=HYSrsxhyEik&index=34&list=PLsyeobzWxl7pUPF2xjjJiG4BKC9x_GY46
 
 # Code
-File->New->Dynamic Web Project
-Write Project Name
-In your project in JavaScript Resources right click in webContent new JSP File
+###### 1 File->New->Dynamic Web Project
+###### 2 Write Project Name
+###### 3 In your project in JavaScript Resources right click in webContent new JSP File
