@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-   erroe : please login again
+   error : please login again
 </body>
 </html>

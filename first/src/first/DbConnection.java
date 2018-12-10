@@ -1,7 +1,7 @@
 package first;
 import java.sql.*;
 public class DbConnection {
-	static Connection con;
+	public static Connection con;
 	   public DbConnection()
 	   {
 	      con =null;
