@@ -46,72 +46,17 @@ public class UploadDownloadFileServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// gets values of text fields
-        
-        //String lastName = request.getParameter("lastName");
-         
-        /*InputStream inputStream = null; // input stream of the upload file
-         
-        // obtains the upload file part in this multipart request
-        Part filePart = request.getPart("photo");
-        if (filePart != null) {
-            // prints out some information for debugging
-            System.out.println(filePart.getName());
-            System.out.println(filePart.getSize());
-            System.out.println(filePart.getContentType());
-             
-            // obtains input stream of the upload file
-            inputStream = filePart.getInputStream();
-        }
-         
-        Connection conn = null; // connection to the database
-        String message = null;  // message will be sent back to client
-         
-        try {
-            // connects to the database
-            DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-            //con = DriverManager.getConnection(dbURL, dbUser, dbPass);
- 
-            // constructs SQL statement
-            String sql = "INSERT INTO contacts (first_name, last_name, photo) values (?, ?, ?)";
-            PreparedStatement statement = first.DbConnection.con.prepareStatement(sql);
-            statement.setString(1, firstName);
-            statement.setString(2, lastName);
-             
-            if (inputStream != null) {
-                // fetches input stream of the upload file for the blob column
-                statement.setBlob(3, inputStream);
-            }
- 
-            // sends the statement to the database server
-            int row = statement.executeUpdate();
-            if (row > 0) {
-                message = "File uploaded and saved into database";
-            }
-        } catch (SQLException ex) {
-            message = "ERROR: " + ex.getMessage();
-            ex.printStackTrace();
-        } finally {
-            if (conn != null) {
-                // closes the database connection
-                try {
-                    conn.close();
-                } catch (SQLException ex) {
-                    ex.printStackTrace();
-                }
-            }
-            // sets the message in request scope
-            request.setAttribute("Message", message);
-             
-            // forwards to the message page
-            getServletContext().getRequestDispatcher("/Message.jsp").forward(request, response);
-        }*/
+		String coursename = request.getParameter("coursename");
+		String year=request.getParameter("year");
+		String branchname = request.getParameter("branchname");
+		String classsize=request.getParameter("classsize");
+		System.out.println(coursename);
 		try {
 	    	ServletFileUpload sf=new ServletFileUpload(new DiskFileItemFactory());
 	    	List<FileItem> multifiles=sf.parseRequest(request);
 	    	for(FileItem item : multifiles)
 	    	{
-	    		item.write(new File("/home/parul/eclipse-workspace/ISDNBA/marks/"+item.getName()));
+	    		item.write(new File("/home/parul/eclipse-workspace/ISDNBA/uploads/"+coursename+"_"+year+"_marks.xlsx"));
 	    	}
 	    	request.setAttribute("message", "upload has been successfull!");
 	    	//System.out.println("file uploaded");
@@ -121,8 +66,11 @@ public class UploadDownloadFileServlet extends HttpServlet {
 	    		request.setAttribute("message", "There has been an error "+ex.getMessage());
 	    		//System.out.println(ex);
 	    	}
-		getServletContext().getRequestDispatcher("/message.jsp").forward(request, response);
-    }
+		getServletContext().getRequestDispatcher("/message.jsp").forward(request, response);	
+    
+	ReadExcel reading=new ReadExcel();
+	reading.reading(coursename,year,branchname,classsize);
 	}
+}
 
 

@@ -1,8 +1,24 @@
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import javax.*;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import javax.swing.JOptionPane;
+import java.awt.event.*;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.xssf.usermodel.*;
@@ -15,45 +31,37 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.util.*;
 //import org.apache.poi.poifs.filesystem.POISFileSystem;
 public class ReadExcel {
-	
-public static void main(String [] args)  throws IOException{
-	
-	
-	 /*File myFile = new File("/home/parul/eclipse-workspace/ISDNBA/marks/Marks AI.xlsx");
-     FileInputStream fis = new FileInputStream(myFile);
-
-     // Finds the workbook instance for XLSX file
-     XSSFWorkbook myWorkBook = new XSSFWorkbook (fis);
-    
-     // Return first sheet from the XLSX workbook
-     XSSFSheet mySheet = myWorkBook.getSheetAt(0);
-    
-     // Get iterator to all the rows in current sheet
-     Iterator<Row> rowIterator = mySheet.iterator();
-    
-     // Traversing over each row of XLSX file
-     while (rowIterator.hasNext()) {
-         Row row = rowIterator.next();
-
-         // For each row, iterate through each columns
-         Iterator<Cell> cellIterator = row.cellIterator();
-         while (cellIterator.hasNext()) {
-
-             Cell cell=cellIterator.next();
-             System.out.println(cell.toString()+";");
-          
-             }
-         System.out.println();
-         }
-         System.out.println("");
-         myWorkBook.close();
-         fis.close();
-
-
-*/
+	Connection con=null;
+public void reading(String coursename,String year,String branchname,String classsize)  throws IOException{
+	try {
+		
+		 
+		DbConnection d=new DbConnection();
+		con=d.getConnection();
+	try {
+		String s="use isdlab";
+		PreparedStatement p=con.prepareStatement(s);
+		p.executeQuery(s);
+	}catch(Exception c) {
+		System.out.println("isd lab nh chl rh");
+	}
+	try {
+		 String s="create table "+coursename+"_"+year+"_marks"+"(Sno int,roll_no varchar(255), name varchar(255) ,AC1 int,AC2 int,AC3 int,AC4 int,AC5 int,AC6 int,total int)";
+		 PreparedStatement p=con.prepareStatement(s);
+			p.executeUpdate(s);
+	}
+	catch(Exception ex)
+	{
+		System.out.println("error in creating marks table in database"+ex);
+	}
+	}
+	catch(Exception e)
+	{
+		System.out.println("ERRROR........");
+	}
 	
 	try{
-        File newFile = new File("/home/parul/eclipse-workspace/ISDNBA/marks/Marks AI.xlsx");
+        File newFile = new File("/home/parul/eclipse-workspace/ISDNBA/uploads/"+coursename+"_"+year+"_marks.xlsx");
         FileInputStream fIO = new FileInputStream(newFile);
         XSSFWorkbook mybook = new XSSFWorkbook(fIO);         //finds the Excelfile
         XSSFSheet mySheet = mybook.getSheetAt(0);// Return first sheet from the XLSX workbook
@@ -64,35 +72,30 @@ public static void main(String [] args)  throws IOException{
         while(rowIterator.hasNext())    {
              r = rowIterator.next();
             //Cursor points to row
+             String ss="insert into "+ coursename+"_"+year+"_marks "+"values ( " ;
             Iterator<Cell> cell_Iterator = r.cellIterator();
             while(cell_Iterator.hasNext())  {
             	//c=cell Iterator.next();
-                
+                              
              
                  c = cell_Iterator.next();
-                 System.out.println(c.toString()+";");
-                //Cursor points to cell
-              /*  switch (c.getCellType())    {
-                case Cell.CELL_TYPE_STRING:
-                    System.out.print(c.getStringCellValue()+"\t");
-                    //System.out.println("Case String");
-                    break;
-                case Cell.CELL_TYPE_NUMERIC:
-                    System.out.print(c.getNumericCellValue()+"\t");
-                    //System.out.println("Case number");
-                    break;
-                case Cell.CELL_TYPE_BOOLEAN:
-                    System.out.print(c.getBooleanCellValue()+"\t");
-                    System.out.println("Case boolean");
-                    break;
-                case Cell.CELL_TYPE_FORMULA:
-                    System.out.print(c.getCellFormula()+"\t");
-                    //System.out.println("Case formula");
-                    break;
-                default:
-                } */                 
+                 ss+="'"+c.toString()+"'"+",";
+                 
+                 System.out.print(c.toString()+";");
+                           
             }
-            System.out.println();//next to display in table format
+            ss=ss.substring(0,ss.length()-1);
+            ss+=")";
+            System.out.println(ss);
+            try {
+            PreparedStatement p=con.prepareStatement(ss);
+			p.executeUpdate(ss);}
+            catch(Exception f)
+            {
+            	System.out.println("insetrhgb"+f);
+            }
+            
+           System.out.println();//next to display in table format
        }            
         mybook.close();
         fIO.close();
