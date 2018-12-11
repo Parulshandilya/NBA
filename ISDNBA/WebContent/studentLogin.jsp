@@ -92,19 +92,16 @@ span.psw {
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="home.jsp">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Faculty Login</a>
+            <a class="nav-link" href="facultyLogin.jsp">Faculty Login</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Student Login</a>
+            <a class="nav-link" href="studentLogin.jsp">Student Login</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Contact Us</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="aboutUs.jsp">About Us</a>
           </li>
         </ul>
       </div>

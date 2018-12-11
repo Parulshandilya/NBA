@@ -7,47 +7,7 @@
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="../../../../favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      .centered {
-	  position: absolute;
-	  top: 50%;
-	  left: 50%;
-          font-size:60px;
-          color: white;
-	  transform: translate(-50%, -50%);}
-       
-      
-      
-	body {font-family: Arial, Helvetica, sans-serif;}
-	form {border: 3px solid #f1f1f1;}
-	button {
-	  background-color: #4CAF50;
-	  color: white;
-	  padding: 14px 20px;
-	  margin: 8px 0;
-	  border: none;
-	  cursor: pointer;
-	  width: 25%;
-	}
-	.wrapper {
-	    text-align: left;
-	}
-
-
-	button:hover {
-	  opacity: 0.8;
-	}
-
-
-	.container {
-	  padding: 16px;
-	}
-
-   </style>
-
-    
-    <title>NBA Accreditation</title>
+  <title>NBA Accreditation</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -59,55 +19,55 @@
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#"><img src="Logo-LNM.png" height="70rem"></a>
+      <a class="navbar-brand" href="#"><img src="Logo.png"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="home.jsp">Home<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="home.jsp">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="facultyLogin.jsp">Faculty Login</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="studentLogin.jsp">Student Login</a>
+            <a class="nav-link" href="studentLogin.jsp">Studet Login</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="aboutUs.jsp">About Us</a>
+            <a class="nav-link" href="aboutUs.html">About Us</a>
           </li>
         </ul>
-       
       </div>
     </nav>
+    <br><br><br><br><br><br>
+    
+ <h2> About Us </h2> 
+ <br><br><br><br><br>
+ <h5>
+"Accreditation" is the formal recognition of the quality of an educational program / Institution by an external - independent agency
+on the basis of impartial assessment on the basis of well defined criteria.<br><br>
+Program Outcomes (or PO) are narrower statements that describe what students are expected to know and be able to do by the time of
+graduation.Course Outcomes (or CO) need to reflect both the objectives and coutcomes that the academic program represents as well as the broader mission of the institution as a whole.<br><br>
 
-<div class="jumbotron" style=" background-image: url('image3.jpg'); 
-  background-color: #cccccc;
-  height: 700px; 
-  
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-size: cover;" > 
+  This website eases out the tedious task of manually generating the NBA accreditation report by taking into account the feedback received   from the faculty members and students.<br>
+</h5>
 
 
- 
-  <div class="centered" style="padding-bottom: 10rem;"><bold>NBA Acreditation <br> Report Generation</bold> </div>
-  <br><br><br>
-  <div align="center"style="padding-bottom: 12rem;"  ><img src="nba.png"  height="100rem" width="15%" ></div>
-  <br><br><br><br><br><br><br>
-  <div style="text-align: left; width: 97%; margin-top: 1rem;">
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-      <button onclick="location.href='facultyLogin.jsp'" type="button" style="background-color: #e7e7e7; color: black;">
-       Faculty Login</button>
-        
-   &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
-        <button onclick="location.href='studentLogin.jsp'" type="button" style="background-color: #e7e7e7; color: black;">
-       Student Login</button>
-        
-        <!--<button type="button" class="btn btn-cs-4 animated fadeInUp" id="reg" style="font-weight: bold; background-color: #e7e7e7; color: black;">Student Login</button>-->
-  </div>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+<br><br><br><br><br><br><br><br><br><br><br>
 
 <footer>
   <div style="background-color:#343a40;;">
@@ -142,5 +102,6 @@
         </div>
     </div>
 </footer>
-  </body>
+
+</body>
 </html>

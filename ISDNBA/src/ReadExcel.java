@@ -123,6 +123,10 @@ public void reading(String coursename,String year,String branchname,String class
 }
 
 public void reading1(String coursename,String year,String branchname,String classsize)  throws IOException{
+	int[] percentage;
+    percentage=new int[6];
+    int[] threshold;
+    threshold=new int[6];
 	try {
 		
 		 
@@ -158,6 +162,7 @@ public void reading1(String coursename,String year,String branchname,String clas
         Iterator<Row> rowIterator = mySheet.iterator(); //create a cursor called iterator to all rows in sheet
         Row r;
         Cell c;
+        
         //to travel into the Excel spreadsheet
       r=rowIterator.next();
       int i=1;
@@ -168,14 +173,20 @@ public void reading1(String coursename,String year,String branchname,String clas
             Iterator<Cell> cell_Iterator = r.cellIterator();
             c=cell_Iterator.next();
             String k="insert into COAttainment values (";
-            
+            int j=0,f=0;
             while(cell_Iterator.hasNext())  {
             	//c=cell Iterator.next();
                               
              
                  c = cell_Iterator.next();
-                 
-                 
+                 if(i==1)
+                 {
+                	 threshold[f++]=Integer.parseInt(c.toString());
+                 }
+                 if(i==2)
+                 {
+                	 percentage[j++]=Integer.parseInt(c.toString());
+                 }
                 	 k+="'"+c.toString()+"'"+",";
                  
                  ss+="'"+c.toString()+"'"+",";
@@ -191,9 +202,9 @@ public void reading1(String coursename,String year,String branchname,String clas
                 try {
                 PreparedStatement p=con.prepareStatement(k);
     			p.executeUpdate(k);}
-                catch(Exception f)
+                catch(Exception fucka)
                 {
-                	System.out.println("insetrhgb111111"+f);
+                	System.out.println("insetrhgjjhghyfgrgf11"+fucka);
                 }
             }
             ss=ss.substring(0,ss.length()-1);
@@ -202,9 +213,9 @@ public void reading1(String coursename,String year,String branchname,String clas
             try {
             PreparedStatement p=con.prepareStatement(ss);
 			p.executeUpdate(ss);}
-            catch(Exception f)
+            catch(Exception foon)
             {
-            	System.out.println("insetrhgb111111"+f);
+            	System.out.println("insetrhgb111111"+foon);
             }
             
            System.out.println();//next to display in table format
@@ -219,6 +230,49 @@ public void reading1(String coursename,String year,String branchname,String clas
     catch(IOException ei){
         ei.printStackTrace();
     }
+	try {
+		int[] mul,success,success_rate;
+		success_rate=new int[6];
+		success=new int[6];
+		mul=new int[6];
+		PreparedStatement p;
+		String s="select count(*) from "+coursename+"_"+year+"_Marks"+" where AC";
+		for(int i=0;i<6;i++)
+		{
+				String k=s+Integer.toString(i+1);
+				mul[i]=threshold[i]*percentage[i]/100;
+				k=k+">= "+Integer.toString(mul[i]);
+				p=con.prepareStatement(k);
+				success[i]=p.executeUpdate(k);
+				success_rate[i]=success[i]*100/Integer.parseInt(classsize);
+			    
+		}
+	    s="insert into "+coursename+"_"+year+"_COAttainment"+" values (";
+	    String ss="insert into "+coursename+"_"+year+"_COAttainment"+" values (";
+		for(int i=0;i<6;i++)
+		{
+			s+=Integer.toString(success[i])+",";
+			ss+=Integer.toString(success_rate[i])+",";
+			
+		}
+		s=s.substring(0, s.length()-1);
+		ss=ss.substring(0, ss.length()-1);
+		ss+=")";
+		s+=")";
+		p=con.prepareStatement(s);
+		p.executeUpdate(s);
+		p=con.prepareStatement(ss);
+		p.executeUpdate(ss);
+		for(int i=0;i<6;i++)
+		{
+			System.out.println(success[i]);
+		}
+		
+	}
+	catch(Exception lala)
+	{
+		System.out.println(lala);
+	}
 	
 }
 
