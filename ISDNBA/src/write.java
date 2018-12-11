@@ -32,7 +32,6 @@ import java.util.*;
 //import org.apache.poi.poifs.filesystem.POISFileSystem;
 public class ReadExcel {
 	Connection con=null;
-	
 public void reading(String coursename,String year,String branchname,String classsize)  throws IOException{
 	try {
 		
@@ -49,18 +48,6 @@ public void reading(String coursename,String year,String branchname,String class
 	try {
 		 String s="create table "+coursename+"_"+year+"_Marks"+"(Sno int,roll_no varchar(255), name varchar(255) ,AC1 int,AC2 int,AC3 int,AC4 int,AC5 int,AC6 int,total int)";
 		 PreparedStatement p=con.prepareStatement(s);
-			p.executeUpdate(s);
-		
-	}
-	catch(Exception ex)
-	{
-		System.out.println("error in creating marks table in database"+ex);
-	}
-	try {
-		 String s="create table "+coursename+"_"+year+"_COAttainment"+"(AC1 int,AC2 int,AC3 int,AC4 int,AC5 int,AC6 )";
-		 PreparedStatement p=con.prepareStatement(s);
-			p.executeUpdate(s);
-			s="insert into "+ coursename +"_"+ year +"_COAttainment"+" values("+classsize+","+classsize+","+classsize+","+classsize+","+classsize+","+classsize+")";
 			p.executeUpdate(s);
 	}
 	catch(Exception ex)
@@ -160,41 +147,21 @@ public void reading1(String coursename,String year,String branchname,String clas
         Cell c;
         //to travel into the Excel spreadsheet
       r=rowIterator.next();
-      int i=1;
         while(rowIterator.hasNext())    {
              r = rowIterator.next();
             //Cursor points to row
              String ss="insert into "+ coursename+"_"+year+"_COvsAC "+"values ( " ;
             Iterator<Cell> cell_Iterator = r.cellIterator();
             c=cell_Iterator.next();
-            String k="insert into COAttainment values (";
-            
             while(cell_Iterator.hasNext())  {
             	//c=cell Iterator.next();
                               
              
                  c = cell_Iterator.next();
-                 
-                 
-                	 k+="'"+c.toString()+"'"+",";
-                 
                  ss+="'"+c.toString()+"'"+",";
                  
                  System.out.print(c.toString()+";");
                            
-            }
-            if(i==1)
-            {
-            	k=k.substring(0,k.length()-1);
-                k+=")";
-                System.out.println(k);
-                try {
-                PreparedStatement p=con.prepareStatement(k);
-    			p.executeUpdate(k);}
-                catch(Exception f)
-                {
-                	System.out.println("insetrhgb111111"+f);
-                }
             }
             ss=ss.substring(0,ss.length()-1);
             ss+=")";
@@ -208,7 +175,6 @@ public void reading1(String coursename,String year,String branchname,String clas
             }
             
            System.out.println();//next to display in table format
-           i++;
        }            
         mybook.close();
         fIO.close();
@@ -219,7 +185,6 @@ public void reading1(String coursename,String year,String branchname,String clas
     catch(IOException ei){
         ei.printStackTrace();
     }
-	
 }
 
 public void reading2(String coursename,String year,String branchname,String classsize)  throws IOException{

@@ -1,3 +1,4 @@
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,16 +22,16 @@ import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 /**
- * Servlet implementation class UploadDownloadFileServlet
+ * Servlet implementation class up1
  */
-@WebServlet("/UploadDownloadFileServlet")
-public class UploadDownloadFileServlet extends HttpServlet {
+@WebServlet("/up4")
+public class up4 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public UploadDownloadFileServlet() {
+    public up4() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -47,22 +48,21 @@ public class UploadDownloadFileServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String coursename = request.getParameter("coursename");
-		String year=request.getParameter("year");
-		String branchname = request.getParameter("branchname");
-		String classsize=request.getParameter("classsize");
+
+		String coursename = (String) request.getSession(false).getAttribute("coursename");
+		String branchname =(String) request.getSession(false).getAttribute("branchname");
+		String year = (String) request.getSession(false).getAttribute("year");
+		String classsize=(String) request.getSession(false).getAttribute("classsize");
+
 		System.out.println(coursename);
-		HttpSession session = request.getSession();
-		session.setAttribute("coursename", coursename);
-		session.setAttribute("year", year);
-		session.setAttribute("branchname", branchname);
-		session.setAttribute("classize", classsize);
-		/*try {
+		
+		System.out.println(coursename);
+		try {
 	    	ServletFileUpload sf=new ServletFileUpload(new DiskFileItemFactory());
 	    	List<FileItem> multifiles=sf.parseRequest(request);
 	    	for(FileItem item : multifiles)
 	    	{
-	    		item.write(new File("/home/parul/eclipse-workspace/ISDNBA/uploads/"+coursename+"_"+year+"_marks.xlsx"));
+	    		item.write(new File("/home/parul/eclipse-workspace/ISDNBA/uploads/"+coursename+"_"+year+"_POList.xlsx"));
 	    	}
 	    	request.setAttribute("message", "upload has been successfull!");
 	    	//System.out.println("file uploaded");
@@ -72,10 +72,10 @@ public class UploadDownloadFileServlet extends HttpServlet {
 	    		request.setAttribute("message", "There has been an error "+ex.getMessage());
 	    		//System.out.println(ex);
 	    	}
-	*/	getServletContext().getRequestDispatcher("/upload1.jsp").forward(request, response);	
+		ReadExcel reading=new ReadExcel();
+		reading.reading3(coursename,year,branchname,classsize);
+		
+		getServletContext().getRequestDispatcher("/upload5.jsp").forward(request, response);	
     
-	//ReadExcel reading=new ReadExcel();
-	//reading.reading(coursename,year,branchname,classsize);
-	
 	}
 }

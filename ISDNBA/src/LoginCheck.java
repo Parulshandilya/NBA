@@ -48,6 +48,7 @@ public class LoginCheck extends HttpServlet {
 			try {
 				String user = request.getParameter("uname");
 				String pswd=request.getParameter("password");
+				
 				Connection con=null;
 				DbConnection d=new DbConnection();
 				con=d.getConnection();
