@@ -28,12 +28,26 @@ import org.apache.poi.ss.usermodel.CellType;
 //import org.apache.poi.xssf.usermodel.
 
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import com.mysql.cj.xdevapi.Statement;
+
 import java.util.*;
 //import org.apache.poi.poifs.filesystem.POISFileSystem;
 public class ReadExcel {
+     float [] indirectFinal=new float[15];
+     float [] directFinal=new float[15];
+	int[] indirect=new int[7];
+	//int[] direct=new int[7];
+	int[] direct= {65,65,64,70,70,0,0};
+	int[][] COvsAC=new int[7][6];
+	int[][] COvsACN=new int[7][6];
+	int[][] COMatrix=new int[7][15];
+	int[] mul,success,success_rate;
+
 	Connection con=null;
 	
 public void reading(String coursename,String year,String branchname,String classsize)  throws IOException{
+	System.out.println(classsize);
 	try {
 		
 		 
@@ -57,7 +71,7 @@ public void reading(String coursename,String year,String branchname,String class
 		System.out.println("error in creating marks table in database"+ex);
 	}
 	try {
-		 String s="create table "+coursename+"_"+year+"_COAttainment"+"(AC1 int,AC2 int,AC3 int,AC4 int,AC5 int,AC6 )";
+		 String s="create table "+coursename+"_"+year+"_COAttainment"+"(AC1 int,AC2 int,AC3 int,AC4 int,AC5 int,AC6 int)";
 		 PreparedStatement p=con.prepareStatement(s);
 			p.executeUpdate(s);
 			s="insert into "+ coursename +"_"+ year +"_COAttainment"+" values("+classsize+","+classsize+","+classsize+","+classsize+","+classsize+","+classsize+")";
@@ -65,7 +79,20 @@ public void reading(String coursename,String year,String branchname,String class
 	}
 	catch(Exception ex)
 	{
-		System.out.println("error in creating marks table in database"+ex);
+		System.out.println("error in creating co attainment table "+ex);
+	}
+	try {
+		 String s="create table "+coursename+"_"+year+"_DirectIndirectTable"+"(Type varchar(255),PO1 float,PO2 float,PO3 float,PO4 float,PO5 float,PO6 float,PO7 float,PO8 float,PO9 float,PO10 float,PO11 float,PO12 float,PSO1 float,PSO2 float,PSO3 float)";
+		 PreparedStatement p=con.prepareStatement(s);
+			p.executeUpdate(s);
+			s="insert into "+ coursename +"_"+ year +"_DirectIndirectTable"+" values('direct',.67034,.6581,.6749,.6726,.6826,.6744,.7071,.70711,.6692,.6664,.7071,.68756,.6768,.67833,.7071)";
+			p.executeUpdate(s);
+			s="insert into "+ coursename +"_"+ year +"_DirectIndirectTable"+" values('indirect',.89,.9017,.8125,.8434,.8906,.8920,.8438,.8125,.84373,.8593,.875,.883,.8636,.8612,.8125)";
+			p.executeUpdate(s);
+	}
+	catch(Exception ex)
+	{
+		System.out.println("error in creating DirectIndirect table "+ex);
 	}
 	}
 	catch(Exception e)
@@ -124,6 +151,7 @@ public void reading(String coursename,String year,String branchname,String class
 
 public void reading1(String coursename,String year,String branchname,String classsize)  throws IOException{
 	int[] percentage;
+
     percentage=new int[6];
     int[] threshold;
     threshold=new int[6];
@@ -166,34 +194,49 @@ public void reading1(String coursename,String year,String branchname,String clas
         //to travel into the Excel spreadsheet
       r=rowIterator.next();
       int i=1;
+      int rr=0;
         while(rowIterator.hasNext())    {
              r = rowIterator.next();
+
             //Cursor points to row
              String ss="insert into "+ coursename+"_"+year+"_COvsAC "+"values ( " ;
             Iterator<Cell> cell_Iterator = r.cellIterator();
             c=cell_Iterator.next();
-            String k="insert into COAttainment values (";
+            String k="insert into "+coursename+"_"+year+"_COAttainment values (";
             int j=0,f=0;
+            int cc=0;
             while(cell_Iterator.hasNext())  {
             	//c=cell Iterator.next();
-                              
-             
-                 c = cell_Iterator.next();
+            	c = cell_Iterator.next();
+                String p=c.toString();
+                float ko=Float.valueOf(p);
+                int pp=Math.round(ko);
+                if(rr==7)
+                	break;
                  if(i==1)
                  {
-                	 threshold[f++]=Integer.parseInt(c.toString());
+                	 //System.out.println(pp);
+                	 threshold[f++]=pp;
+                	
                  }
-                 if(i==2)
+                 else if(i==2)
                  {
-                	 percentage[j++]=Integer.parseInt(c.toString());
+                	 percentage[j++]=Integer.parseInt(Integer.toString(pp));
                  }
-                	 k+="'"+c.toString()+"'"+",";
+
+                	 k+="'"+Integer.toString(pp)+"'"+",";
                  
-                 ss+="'"+c.toString()+"'"+",";
+                 ss+="'"+Integer.toString(pp)+"'"+",";
+                 if(i!=1 && i!=2)
+                 {
+                	 COvsAC[rr][cc]=pp;
+                	 COvsACN[rr][cc]=pp*percentage[cc]/100;
+                 }
                  
-                 System.out.print(c.toString()+";");
-                           
+                 System.out.print(Integer.toString(pp));
+              cc++;             
             }
+          
             if(i==1)
             {
             	k=k.substring(0,k.length()-1);
@@ -201,6 +244,7 @@ public void reading1(String coursename,String year,String branchname,String clas
                 System.out.println(k);
                 try {
                 PreparedStatement p=con.prepareStatement(k);
+                System.out.print(k);
     			p.executeUpdate(k);}
                 catch(Exception fucka)
                 {
@@ -220,7 +264,9 @@ public void reading1(String coursename,String year,String branchname,String clas
             
            System.out.println();//next to display in table format
            i++;
-       }            
+           if(i!=1 && i!=2)
+           rr++;
+       }
         mybook.close();
         fIO.close();
     }
@@ -231,20 +277,26 @@ public void reading1(String coursename,String year,String branchname,String clas
         ei.printStackTrace();
     }
 	try {
-		int[] mul,success,success_rate;
+		
 		success_rate=new int[6];
 		success=new int[6];
 		mul=new int[6];
 		PreparedStatement p;
 		String s="select count(*) from "+coursename+"_"+year+"_Marks"+" where AC";
+		//Statement  s=con.createStatement();
 		for(int i=0;i<6;i++)
 		{
 				String k=s+Integer.toString(i+1);
 				mul[i]=threshold[i]*percentage[i]/100;
 				k=k+">= "+Integer.toString(mul[i]);
+				System.out.println(k);
 				p=con.prepareStatement(k);
-				success[i]=p.executeUpdate(k);
+				ResultSet rs=p.executeQuery(k);
+				if(rs.next())
+				success[i]=rs.getInt(1);
+				//System.out.println("success mai yey jata hai "+success[i]);
 				success_rate[i]=success[i]*100/Integer.parseInt(classsize);
+				
 			    
 		}
 	    s="insert into "+coursename+"_"+year+"_COAttainment"+" values (";
@@ -259,6 +311,8 @@ public void reading1(String coursename,String year,String branchname,String clas
 		ss=ss.substring(0, ss.length()-1);
 		ss+=")";
 		s+=")";
+		System.out.println(s);
+		System.out.println(ss);
 		p=con.prepareStatement(s);
 		p.executeUpdate(s);
 		p=con.prepareStatement(ss);
@@ -273,7 +327,28 @@ public void reading1(String coursename,String year,String branchname,String clas
 	{
 		System.out.println(lala);
 	}
+	for(int jx=0;jx<7;jx++)
+	{
 	
+		for(int jy=0;jy<6;jy++)
+		{
+			System.out.print(COvsACN[jx][jy]+"  ");
+		}
+		System.out.println();
+	}
+	for(int jx=0;jx<7;jx++)
+	{
+		int sum=0;
+		for(int jy=0;jy<6;jy++)
+		{
+			sum+=COvsACN[jx][jy];
+			indirect[jx]+=success_rate[jy]*COvsACN[jx][jy];
+		}
+		if(sum!=0)
+		{indirect[jx]/=sum;}
+		System.out.println("INDIRECT WEIGHT");
+		System.out.println(indirect[jx]+" ");
+	}
 }
 
 public void reading2(String coursename,String year,String branchname,String classsize)  throws IOException{
@@ -314,21 +389,26 @@ public void reading2(String coursename,String year,String branchname,String clas
         Cell c;
         //to travel into the Excel spreadsheet
       r=rowIterator.next();
+      int rr=0;
         while(rowIterator.hasNext())    {
              r = rowIterator.next();
             //Cursor points to row
              String ss="insert into "+ coursename+"_"+year+"_COMatrix "+"values ( " ;
             Iterator<Cell> cell_Iterator = r.cellIterator();
             c=cell_Iterator.next();
+            int cc=0;
             while(cell_Iterator.hasNext())  {
             	//c=cell Iterator.next();
-                              
+                System.out.println(rr+"rr_cc "+cc);              
              
                  c = cell_Iterator.next();
                  ss+="'"+c.toString()+"'"+",";
-                 
+                 String p=c.toString();
+                 float ko=Float.valueOf(p);
+                 int pp=Math.round(ko);
+                 COMatrix[rr][cc]=pp;
                  System.out.print(c.toString()+";");
-                           
+                     cc++;      
             }
             ss=ss.substring(0,ss.length()-1);
             ss+=")";
@@ -342,6 +422,7 @@ public void reading2(String coursename,String year,String branchname,String clas
             }
             
            System.out.println();//next to display in table format
+           rr++;
        }            
         mybook.close();
         fIO.close();
@@ -351,7 +432,41 @@ public void reading2(String coursename,String year,String branchname,String clas
     }
     catch(IOException ei){
         ei.printStackTrace();
-    }
+}
+	for(int jy=0;jy<15;jy++)
+	{
+		indirectFinal[jy]=0;
+		float sum=0;
+		for(int jx=0;jx<7;jx++)
+		{
+			sum+=COMatrix[jx][jy];
+			//System.out.println("coooo"+COMatrix[jx][jy]);
+			System.out.println("INDIRECT"+indirect[jx]);
+			
+			indirectFinal[jy]+=(float)COMatrix[jx][jy]*(float)indirect[jx];
+		}
+		if(sum!=0)
+		{
+			indirectFinal[jy]=(float)indirectFinal[jy]/(float)sum;
+		}
+		System.out.print(indirectFinal[jy]+" ");
+	}
+	System.out.print("DIRECT FEEDBACK");
+	for(int jy=0;jy<15;jy++)
+	{
+		directFinal[jy]=0;
+		float sum=0;
+		for(int jx=0;jx<7;jx++)
+		{
+			sum+=COMatrix[jx][jy];
+			directFinal[jy]+=(float)COMatrix[jx][jy]*direct[jx];
+		}
+		if(sum!=0)
+		{
+			directFinal[jy]=indirectFinal[jy]/sum;
+		}
+		System.out.print(directFinal[jy]+" ");
+	}
 }
 
 public void reading3(String coursename,String year,String branchname,String classsize)  throws IOException{
@@ -405,12 +520,12 @@ public void reading3(String coursename,String year,String branchname,String clas
                  c = cell_Iterator.next();
                  ss+="'"+c.toString()+"'"+",";
                  
-                 System.out.print(c.toString()+";");
+                 //System.out.print(c.toString()+";");
                            
             }
             ss=ss.substring(0,ss.length()-1);
             ss+=")";
-            System.out.println(ss);
+            //System.out.println(ss);
             try {
             PreparedStatement p=con.prepareStatement(ss);
 			p.executeUpdate(ss);}
@@ -482,12 +597,12 @@ public void reading4(String coursename,String year,String branchname,String clas
                  c = cell_Iterator.next();
                  ss+="'"+c.toString()+"'"+",";
                  
-                 System.out.print(c.toString()+";");
+                // System.out.print(c.toString()+";");
                            
             }
             ss=ss.substring(0,ss.length()-1);
             ss+=")";
-            System.out.println(ss);
+            //System.out.println(ss);
             try {
             PreparedStatement p=con.prepareStatement(ss);
 			p.executeUpdate(ss);}

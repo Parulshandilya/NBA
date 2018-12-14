@@ -18,7 +18,7 @@
 	  border: none;
 	  cursor: pointer;
 	  width: 25%;
-          height: 60px;
+      height: 60px;
 	}
 	.wrapper {
 	    text-align: left;
@@ -59,19 +59,16 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-              <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="home.jsp">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="facultyLogin.html">Faculty Login</a>
+            <a class="nav-link" href="facultyLogin.jsp">Faculty Login</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="studentLogin.html">Studet Login</a>
+            <a class="nav-link" href="studentLogin.jsp">Student Login</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Contact Us</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="aboutUs.html">About Us</a>
+            <a class="nav-link" href="aboutUs.jsp">About Us</a>
           </li>
         </ul>
       </div>
@@ -85,17 +82,19 @@
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
     <img src="index.png" alt="upload icon" class="avatar">
      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-    <button type="button" class="btn btn-cs-4 animated fadeInUp" id="reg" style=" background-color: #4CAF50; color: white;">Upload Course Details</button>
-
+    <!--  <button type="submit" onclick="manyUploadsLink.jsp" class="btn btn-cs-4 animated fadeInUp" id="reg" style=" background-color: #4CAF50; color: white;">Upload Course Details</button>
+    <button type="submit" onclick="manyUploadsLink.jsp">Login</button>-->
+    <button onclick="location.href='manyUploadsLink.jsp'" type="button" style="background-color: #4CAF50; color: white;">
+       Upload Course Details</button>
       <br><br><br><br><br>
     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
-    <img src="inde.png" alt="logout icon" class="avatar">
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-    <button type="button" class="btn btn-cs-4 animated fadeInUp" id="reg" style=" background-color: #4CAF50; color: white;">Logout</button>
+    <!--  <img src="inde.png" alt="logout icon" class="avatar">-->
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;-->
+    <!-- <button type="button" class="btn btn-cs-4 animated fadeInUp" id="reg" style=" background-color: #4CAF50; color: white;">Logout</button>-->
+    
+    <!--  <br><br><br><br><br><br>-->
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
 
-    <br><br><br><br><br><br>
-  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-<button type="button" class="btn btn-cs-4 animated fadeInUp" id="reg" style=" background-color: #4CAF50; color: white;">Generate Report</button>
 <br><br><br><br><br><br><br><br><br><br><br><br>  
 
 

@@ -128,7 +128,7 @@
 	    </div>
             <br>
             <div class="wrapper">
-	    <button type="submit">Login</button>
+	    <button type="submit" onclick="facultyPage.jsp">Login</button>
             </div>
 	</form>
 	

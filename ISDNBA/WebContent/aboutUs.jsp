@@ -32,7 +32,7 @@
             <a class="nav-link" href="facultyLogin.jsp">Faculty Login</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="studentLogin.jsp">Studet Login</a>
+            <a class="nav-link" href="studentLogin.jsp">Student Login</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="aboutUs.html">About Us</a>

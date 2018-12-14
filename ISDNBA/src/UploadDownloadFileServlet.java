@@ -51,12 +51,12 @@ public class UploadDownloadFileServlet extends HttpServlet {
 		String year=request.getParameter("year");
 		String branchname = request.getParameter("branchname");
 		String classsize=request.getParameter("classsize");
-		System.out.println(coursename);
+		System.out.println(classsize);
 		HttpSession session = request.getSession();
 		session.setAttribute("coursename", coursename);
 		session.setAttribute("year", year);
 		session.setAttribute("branchname", branchname);
-		session.setAttribute("classize", classsize);
+		session.setAttribute("classsize", classsize);
 		/*try {
 	    	ServletFileUpload sf=new ServletFileUpload(new DiskFileItemFactory());
 	    	List<FileItem> multifiles=sf.parseRequest(request);

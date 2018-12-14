@@ -50,13 +50,16 @@ public class up1 extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		String coursename = (String) request.getSession(false).getAttribute("coursename");
-		String branchname =(String) request.getSession(false).getAttribute("branchname");
-		String year = (String) request.getSession(false).getAttribute("year");
 		String classsize=(String) request.getSession(false).getAttribute("classsize");
-
-		System.out.println(coursename);
+		String year = (String) request.getSession(false).getAttribute("year");
+		String branchname =(String) request.getSession(false).getAttribute("branchname");
 		
-		System.out.println(coursename);
+
+		System.out.println("up1"+coursename);
+		System.out.println("up1"+classsize);
+		System.out.println("up1"+year);
+		System.out.println("up1branch"+branchname);
+		
 		try {
 	    	ServletFileUpload sf=new ServletFileUpload(new DiskFileItemFactory());
 	    	List<FileItem> multifiles=sf.parseRequest(request);

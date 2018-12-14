@@ -1,40 +1,71 @@
+
 public class student {
 
-	private int id;
-	private String firstName;
-	private String lastName;
-	private long mobileNo;
-	private String emailId;
+	/**
+	 * @param args
+	 */
+	int cno=0;
+	int studentId;
+	String firstName;
+	String lastName;
+	String email;
+	Course c[]=new Course[7];
 	
-	public int getId() {
-		return id;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
 	}
-	public void setId(int id) {
-		this.id = id;
+	public student(int studentId, String firstName, String lastName,
+			String email, Course[] c) {
+		super();
+		this.studentId = studentId;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		this.c = c;
+	}
+ public void addCourse(Course cc)
+ {
+	 c[cno++]=cc;
+ }
+ public void subCourse(Course cc)
+ {
+	 cno--;
+ }
+ public void givedirectFeedback()
+ {
+	 directFeedback f=new directFeedback();
+ }
+	public int getStudentId() {
+		return studentId;
+	}
+	public void setStudentId(int studentId) {
+		this.studentId = studentId;
 	}
 	public String getFirstName() {
 		return firstName;
 	}
 	public void setFirstName(String firstName) {
-		firstName = firstName;
+		this.firstName = firstName;
 	}
 	public String getLastName() {
 		return lastName;
 	}
 	public void setLastName(String lastName) {
-		lastName = lastName;
+		this.lastName = lastName;
 	}
-	public long getMobileNo() {
-		return mobileNo;
+	public String getEmail() {
+		return email;
 	}
-	public void setMobileNo(long mobileNo) {
-		this.mobileNo = mobileNo;
+	public void setEmail(String email) {
+		this.email = email;
 	}
-	public String getEmailId() {
-		return emailId;
+	public Course[] getC() {
+		return c;
 	}
-	public void setEmailId(String emailId) {
-		this.emailId = emailId;
+	public void setC(Course[] c) {
+		this.c = c;
 	}
-	
+
+
 }
