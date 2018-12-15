@@ -8,35 +8,30 @@ Group Members:
 
 ## I.
 ### i. Functional – The system generates the report of NBA accreditation
-(a) Generating Accreditation,matching CIF outcome with program outcome,taking
-feedback from students on their program outcome, taking indirect feedback from
-teacher etc
+#### (a) Generating Accreditation,matching CIF outcome with program outcome,taking feedback from students on their program outcome, taking indirect feedback from teacher etc
  ### ii. Domain – reflect characteristics of application domain
-(a) Branch wise course outcomes
-(b) Standard for storing feedback forms
+#### (a) Branch wise course outcomes
+#### (b) Standard for storing feedback forms
 ## II.
 ### i. Input
-(a) Student feedback
-(b) Marks List
-(c) CO List
-(d) PO List
-(e) Correlation Matrix (Correlation between CO and PO)
-(f) CO vs AC (Assessment Component) Details
+#### (a) Student feedback
+#### (b) Marks List
+#### (c) CO List
+#### (d) PO List
+#### (e) Correlation Matrix (Correlation between CO and PO)
+#### (f) CO vs AC (Assessment Component) Details
 ### ii. Constraints
-(a) All student may not fill feedback form.
-(b) Faculty has to provide details ( like Excel Sheets) in the format as mentioned.
-(c) In the marks list the entries of marks is of only integer type.
+#### (a) All student may not fill feedback form.
+#### (b) Faculty has to provide details ( like Excel Sheets) in the format as mentioned.
+#### (c) In the marks list the entries of marks is of only integer type.
 ### iii. Process
-(a) Procedure of generating NBA Report
-(b) Calculating Success % for each Assessment Component for corresponding to
-each course
-(c) Calculating Direct Weight from direct feedback obtained.
-(d) Calculating weighted sum for CO with respect to AC for every course.
-(e) Calculating indirect weight and generating course code table(from direct feedback)
-and end of course survey table(indirect feedback).
+#### (a) Procedure of generating NBA Report
+#### (b) Calculating Success % for each Assessment Component for corresponding to each course
+#### (c) Calculating Direct Weight from direct feedback obtained.
+#### (d) Calculating weighted sum for CO with respect to AC for every course.
+#### (e) Calculating indirect weight and generating course code table(from direct feedback) and end of course survey table(indirect feedback).
 ### iv. Output
-(a) NBA Accreditation Report containing course code table(from direct feedback) and
-end of course survey table(indirect feedback).
+#### (a) NBA Accreditation Report containing course code table(from direct feedback) and end of course survey table(indirect feedback).
 
 https://websiteforstudents.com/how-to-install-eclipse-oxygen-ide-on-ubuntu-167-04-17-10-18-04/
 ## Step 1: Install Java JDK8
