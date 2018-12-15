@@ -6,7 +6,7 @@ Group Members:
 ###### Komal Kungwani
 ###### Amisha Gupta
 
-I.
+## I.
 i. Functional – The system generates the report of NBA accreditation
 (a) Generating Accreditation,matching CIF outcome with program outcome,taking
 feedback from students on their program outcome, taking indirect feedback from
@@ -14,7 +14,7 @@ teacher etc
 ii. Domain – reflect characteristics of application domain
 (a) Branch wise course outcomes
 (b) Standard for storing feedback forms
-II.
+## II.
 i. Input
 (a) Student feedback
 (b) Marks List
