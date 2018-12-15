@@ -33,6 +33,14 @@ Group Members:
 ### iv. Output
 #### (a) NBA Accreditation Report containing course code table(from direct feedback) and end of course survey table(indirect feedback).
 
+## GUI –
+● Home page
+● Faculty Login
+● Student Login
+● About Us
+● Upload pages for CO and PO statements, marks, CO/AC and correlation matrix.
+● Feedback Form page.
+
 https://websiteforstudents.com/how-to-install-eclipse-oxygen-ide-on-ubuntu-167-04-17-10-18-04/
 ## Step 1: Install Java JDK8
 sudo add-apt-repository ppa:webupd8team/java
