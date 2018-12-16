@@ -1,10 +1,12 @@
 # NBA-Accreditition-Report-Generation
+This is an application intended for college faculty members to ease the process of generating NBA report by taking input from faculty and student. 
+##### Development Tool: Eclipse Oxygen 
+##### API: Apache POI 
+##### Web server tool: Apache Tomcat 
+##### Skills Used: Java, HTML ,CSS 
 
 Group Members:
-###### Parul Shandilya
-###### Priyansi Singh
-###### Komal Kungwani
-###### Amisha Gupta
+###### Parul Shandilya, Priyansi Singh, Komal Kungwani, Amisha Gupta
 
 ## I.
 ### i. Functional – The system generates the report of NBA accreditation
