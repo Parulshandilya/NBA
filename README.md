@@ -1,4 +1,4 @@
-# NBA-Accreditition-Report-Generation
+# NBA-Accreditition Report Generator
 ### Summary
 #### The system generates the report of NBA accreditation
 This is an application intended for college faculty members to ease the process of generating NBA report by taking input from faculty and student. 
