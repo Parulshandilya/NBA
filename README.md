@@ -161,8 +161,81 @@ https://www.quora.com/How-do-I-create-a-basic-login-and-register-page-in-HTML
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/COList.png" width="500" title="hover text">
 </p>
 
-### Upload CO/AC List
+### Upload Correlation matrix
 
  <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/COAC.png" width="500" title="hover text">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/CorrelationMatrix.png" width="500" title="hover text">
 </p>
+
+
+### ER Diagram
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/ER%20Diagram.png" width="500" title="hover text">
+</p>
+
+
+### Home Page
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/Home.png" width="500" title="hover text">
+</p>
+
+
+### NBA Report
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/NBAReport.png" width="500" title="hover text">
+</p>
+
+
+### Upload POList
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/POList.png" width="500" title="hover text">
+</p>
+
+### Faculty
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/faculty.png" width="500" title="hover text">
+</p>
+
+
+### Faculty Login
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/facultyLogin.png" width="500" title="hover text">
+</p>
+
+### Faculty Page
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/facultyPage.png" width="500" title="hover text">
+</p>
+
+### Upload Marks
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/marks.png" width="500" title="hover text">
+</p>
+
+### Student Feedback
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/studentFeedback.png" width="500" title="hover text">
+</p>
+
+### Student Login Page
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/studentLogin.png" width="500" title="hover text">
+</p>
+
+
+### Student Page
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/studentPage.png" width="500" title="hover text">
+</p>
+
