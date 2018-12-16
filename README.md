@@ -148,6 +148,20 @@ https://www.codejava.net/java-ee/servlet/eclipse-file-upload-servlet-with-apache
 https://www.journaldev.com/1964/servlet-upload-file-download-example
 https://www.quora.com/How-do-I-create-a-basic-login-and-register-page-in-HTML
 
+
+### ER Diagram
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/ER%20Diagram.png" width="500" title="hover text">
+</p>
+
+
+### Class Diagram
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/Class%20Diagram%20for%20NBA%20Accreditation%20.png" width="500" title="hover text">
+</p>
+
 ## ScreenShot
 ### Upload CO/AC List
 
@@ -155,11 +169,6 @@ https://www.quora.com/How-do-I-create-a-basic-login-and-register-page-in-HTML
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/COAC.png" width="500" title="hover text">
 </p>
 
-### Class Diagram
-
- <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/Class%20Diagram%20for%20NBA%20Accreditation%20.png" width="500" title="hover text">
-</p>
 
 ### Upload COList
 
@@ -172,14 +181,6 @@ https://www.quora.com/How-do-I-create-a-basic-login-and-register-page-in-HTML
  <p align="center">
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/CorrelationMatrix.png" width="500" title="hover text">
 </p>
-
-
-### ER Diagram
-
- <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/ER%20Diagram.png" width="500" title="hover text">
-</p>
-
 
 ### Home Page
 
