@@ -21,16 +21,16 @@ Generating Accreditation,matching CIF outcome with program outcome,taking feedba
 #### (a) NBA Accreditation Report containing course code table(from direct feedback) and end of course survey table(indirect feedback).
 
 ###### Group Members: Parul Shandilya, Priyansi Singh, Komal Kungwani, Amisha Gupta
-### ii. Constraints
-#### (a) All student may not fill feedback form.
-#### (b) Faculty has to provide details ( like Excel Sheets) in the format as mentioned.
-#### (c) In the marks list the entries of marks is of only integer type.
-### iii. Process
-#### (a) Procedure of generating NBA Report
-#### (b) Calculating Success % for each Assessment Component for corresponding to each course
-#### (c) Calculating Direct Weight from direct feedback obtained.
-#### (d) Calculating weighted sum for CO with respect to AC for every course.
-#### (e) Calculating indirect weight and generating course code table(from direct feedback) and end of course survey table(indirect feedback).
+#### Constraints
+###### (a) All student may not fill feedback form.
+###### (b) Faculty has to provide details ( like Excel Sheets) in the format as mentioned.
+###### (c) In the marks list the entries of marks is of only integer type.
+#### Process
+###### (a) Procedure of generating NBA Report
+###### (b) Calculating Success % for each Assessment Component for corresponding to each course
+###### (c) Calculating Direct Weight from direct feedback obtained.
+###### (d) Calculating weighted sum for CO with respect to AC for every course.
+###### (e) Calculating indirect weight and generating course code table(from direct feedback) and end of course survey table(indirect feedback).
 
 
 #### GUI –
