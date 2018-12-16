@@ -3,7 +3,6 @@
 #### The system generates the report of NBA accreditation
 This is an application intended for college faculty members to ease the process of generating NBA report by taking input from faculty and student. 
 Generating Accreditation,matching CIF outcome with program outcome,taking feedback from students on their program outcome, taking indirect feedback from teacher etc
-
 #### Input
 (a) Student feedback (Feedback about the level of course outcome attained.)<br/>
 (b) Marks List (Scores of students of a course for particular batch.)<br/>
@@ -11,16 +10,13 @@ Generating Accreditation,matching CIF outcome with program outcome,taking feedba
 (d) PO List (Program outcome for a course.)<br/>
 (e) Correlation Matrix (Correlation between CO and PO)<br/>
 (f) CO vs AC (Assessment Component) Details<br/>
-
 #### Tools and Technologies
 Development Tool: Eclipse Oxygen<br/> 
 API: Apache POI <br/>
 Web server tool: Apache Tomcat <br/>
 Skills Used: Java, HTML ,CSS <br/>
-
 #### Output
 (a) NBA Accreditation Report containing course code table(from direct feedback) and end of course survey table(indirect feedback).
-
 #### Group Members
 Parul Shandilya, Priyansi Singh, Komal Kungwani, Amisha Gupta
 #### Constraints
@@ -33,15 +29,15 @@ Parul Shandilya, Priyansi Singh, Komal Kungwani, Amisha Gupta
 (c) Calculating Direct Weight from direct feedback obtained.<br/>
 (d) Calculating weighted sum for CO with respect to AC for every course.<br/>
 (e) Calculating indirect weight and generating course code table(from direct feedback) and end of course survey table(indirect feedback).<br/>
+#### GUI
+Home page<br/>
+Faculty Login<br/>
+Student Login<br/>
+About Us<br/>
+Upload pages for CO and PO statements, marks, CO/AC and correlation matrix.<br/>
+Feedback Form page.<br/>
 
-
-#### GUI –
-###### Home page
-###### Faculty Login
-###### Student Login
-###### About Us
-###### Upload pages for CO and PO statements, marks, CO/AC and correlation matrix.
-###### Feedback Form page.
+### Dependencies
 
 https://websiteforstudents.com/how-to-install-eclipse-oxygen-ide-on-ubuntu-167-04-17-10-18-04/
 #### Step 1: Install Java JDK8
