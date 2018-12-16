@@ -12,25 +12,30 @@ Generating Accreditation,matching CIF outcome with program outcome,taking feedba
 (e) Correlation Matrix (Correlation between CO and PO)<br/>
 (f) CO vs AC (Assessment Component) Details<br/>
 
-##### Development Tool: Eclipse Oxygen 
-##### API: Apache POI 
-##### Web server tool: Apache Tomcat 
-##### Skills Used: Java, HTML ,CSS 
+##### Development Tool:
+Eclipse Oxygen 
+##### API: 
+Apache POI 
+##### Web server tool: 
+Apache Tomcat 
+##### Skills Used: 
+Java, HTML ,CSS 
 
-#### iv. Output
-#### (a) NBA Accreditation Report containing course code table(from direct feedback) and end of course survey table(indirect feedback).
+#### Output
+(a) NBA Accreditation Report containing course code table(from direct feedback) and end of course survey table(indirect feedback).
 
-###### Group Members: Parul Shandilya, Priyansi Singh, Komal Kungwani, Amisha Gupta
+#### Group Members
+Parul Shandilya, Priyansi Singh, Komal Kungwani, Amisha Gupta
 #### Constraints
-###### (a) All student may not fill feedback form.
-###### (b) Faculty has to provide details ( like Excel Sheets) in the format as mentioned.
-###### (c) In the marks list the entries of marks is of only integer type.
+(a) All student may not fill feedback form.<br/>
+(b) Faculty has to provide details ( like Excel Sheets) in the format as mentioned.<br/>
+(c) In the marks list the entries of marks is of only integer type.<br/>
 #### Process
-###### (a) Procedure of generating NBA Report
-###### (b) Calculating Success % for each Assessment Component for corresponding to each course
-###### (c) Calculating Direct Weight from direct feedback obtained.
-###### (d) Calculating weighted sum for CO with respect to AC for every course.
-###### (e) Calculating indirect weight and generating course code table(from direct feedback) and end of course survey table(indirect feedback).
+(a) Procedure of generating NBA Report<br/>
+(b) Calculating Success % for each Assessment Component for corresponding to each course. <br/>
+(c) Calculating Direct Weight from direct feedback obtained.<br/>
+(d) Calculating weighted sum for CO with respect to AC for every course.<br/>
+(e) Calculating indirect weight and generating course code table(from direct feedback) and end of course survey table(indirect feedback).<br/>
 
 
 #### GUI –
