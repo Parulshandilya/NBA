@@ -148,3 +148,21 @@ https://www.quora.com/How-do-I-create-a-basic-login-and-register-page-in-HTML
  <p align="center">
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/COAC.png" width="500" title="hover text">
 </p>
+
+### Class Diagram
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/Class%20Diagram%20for%20NBA%20Accreditation%20.png" width="500" title="hover text">
+</p>
+
+### Upload COList
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/COList.png" width="500" title="hover text">
+</p>
+
+### Upload CO/AC List
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/COAC.png" width="500" title="hover text">
+</p>
