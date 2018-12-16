@@ -1,18 +1,19 @@
 # NBA-Accreditition-Report-Generation
 ### The system generates the report of NBA accreditation
 This is an application intended for college faculty members to ease the process of generating NBA report by taking input from faculty and student. 
-### i. Input
-#### (a) Student feedback
-Feedback about the level of course outcome attained.
-#### (b) Marks List
-Scores of students of a course for particular batch.
-#### (c) CO List
-Course outcome for a course.
-#### (d) PO List
-Program outcome for a course.
-#### (e) Correlation Matrix (Correlation between CO and PO)
-#### (f) CO vs AC (Assessment Component) Details
+Generating Accreditation,matching CIF outcome with program outcome,taking feedback from students on their program outcome, taking indirect feedback from teacher etc
 
+#### i. Input
+##### (a) Student feedback
+Feedback about the level of course outcome attained.
+##### (b) Marks List
+Scores of students of a course for particular batch.
+##### (c) CO List
+Course outcome for a course.
+##### (d) PO List
+Program outcome for a course.
+##### (e) Correlation Matrix (Correlation between CO and PO)
+##### (f) CO vs AC (Assessment Component) Details
 
 ##### Development Tool: Eclipse Oxygen 
 ##### API: Apache POI 
@@ -20,14 +21,6 @@ Program outcome for a course.
 ##### Skills Used: Java, HTML ,CSS 
 
 ###### Group Members: Parul Shandilya, Priyansi Singh, Komal Kungwani, Amisha Gupta
-
-## I.
-
-#### (a) Generating Accreditation,matching CIF outcome with program outcome,taking feedback from students on their program outcome, taking indirect feedback from teacher etc
- ### ii. Domain – reflect characteristics of application domain
-#### (a) Branch wise course outcomes
-
-## II.
 ### ii. Constraints
 #### (a) All student may not fill feedback form.
 #### (b) Faculty has to provide details ( like Excel Sheets) in the format as mentioned.
@@ -49,20 +42,17 @@ Program outcome for a course.
 ● Upload pages for CO and PO statements, marks, CO/AC and correlation matrix.
 ● Feedback Form page.
 
-feedback submitted by students ,From Teachers: CO/AC assessment, marks list , CO
-statements ,PO statements.
-
 https://websiteforstudents.com/how-to-install-eclipse-oxygen-ide-on-ubuntu-167-04-17-10-18-04/
-## Step 1: Install Java JDK8
+#### Step 1: Install Java JDK8
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt update
 sudo apt install oracle-java8-installer
-## Step 2: Download Eclipse Oxygen
+#### Step 2: Download Eclipse Oxygen
 Now that Java JDK 8 is installed, got and download Eclipse Oxygen IDE package for your systems.. the link below can be used to get it.
 
 https://www.eclipse.org/downloads/
 
-## Step 3: Install Eclipse IDE
+#### Step 3: Install Eclipse IDE
 
 Use the commands below to extract the content in the  ~/Downloads folder… The next line launches the installer…
 
@@ -84,7 +74,7 @@ mysql-connector-java-8.0.13.zip
 Download Link: https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.0.13.zip
 
 
-Step 1 – Java Installation
+# Step 1 – Java Installation
 
 You must have Java installed on the system before installing Apache Tomcat on a Linux VPS. Tomcat 9 required Java 8 or later version to work. You can check and verify that Java is installed with the right version.
 
