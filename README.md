@@ -5,16 +5,16 @@ This is an application intended for college faculty members to ease the process 
 Generating Accreditation,matching CIF outcome with program outcome,taking feedback from students on their program outcome, taking indirect feedback from teacher etc
 
 #### i. Input
-##### (a) Student feedback
+###### (a) Student feedback
 Feedback about the level of course outcome attained.
-##### (b) Marks List
+###### (b) Marks List
 Scores of students of a course for particular batch.
-##### (c) CO List
+###### (c) CO List
 Course outcome for a course.
-##### (d) PO List
+###### (d) PO List
 Program outcome for a course.
-##### (e) Correlation Matrix (Correlation between CO and PO)
-##### (f) CO vs AC (Assessment Component) Details
+###### (e) Correlation Matrix (Correlation between CO and PO)
+###### (f) CO vs AC (Assessment Component) Details
 
 ##### Development Tool: Eclipse Oxygen 
 ##### API: Apache POI 
