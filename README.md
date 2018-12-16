@@ -4,15 +4,11 @@
 This is an application intended for college faculty members to ease the process of generating NBA report by taking input from faculty and student. 
 Generating Accreditation,matching CIF outcome with program outcome,taking feedback from students on their program outcome, taking indirect feedback from teacher etc
 
-#### i. Input
-###### (a) Student feedback
-Feedback about the level of course outcome attained.
-###### (b) Marks List
-Scores of students of a course for particular batch.
-###### (c) CO List
-Course outcome for a course.
-###### (d) PO List
-Program outcome for a course.
+#### Input
+###### (a) Student feedback (Feedback about the level of course outcome attained.)
+###### (b) Marks List (Scores of students of a course for particular batch.)
+###### (c) CO List (Course outcome for a course.)
+###### (d) PO List (Program outcome for a course.)
 ###### (e) Correlation Matrix (Correlation between CO and PO)
 ###### (f) CO vs AC (Assessment Component) Details
 
@@ -21,7 +17,7 @@ Program outcome for a course.
 ##### Web server tool: Apache Tomcat 
 ##### Skills Used: Java, HTML ,CSS 
 
-### iv. Output
+#### iv. Output
 #### (a) NBA Accreditation Report containing course code table(from direct feedback) and end of course survey table(indirect feedback).
 
 ###### Group Members: Parul Shandilya, Priyansi Singh, Komal Kungwani, Amisha Gupta
@@ -37,7 +33,7 @@ Program outcome for a course.
 #### (e) Calculating indirect weight and generating course code table(from direct feedback) and end of course survey table(indirect feedback).
 
 
-## GUI –
+#### GUI –
 ###### Home page
 ###### Faculty Login
 ###### Student Login
