@@ -1,5 +1,6 @@
 # NBA-Accreditition-Report-Generation
-### The system generates the report of NBA accreditation
+### Summary
+#### The system generates the report of NBA accreditation
 This is an application intended for college faculty members to ease the process of generating NBA report by taking input from faculty and student. 
 Generating Accreditation,matching CIF outcome with program outcome,taking feedback from students on their program outcome, taking indirect feedback from teacher etc
 
@@ -20,6 +21,9 @@ Program outcome for a course.
 ##### Web server tool: Apache Tomcat 
 ##### Skills Used: Java, HTML ,CSS 
 
+### iv. Output
+#### (a) NBA Accreditation Report containing course code table(from direct feedback) and end of course survey table(indirect feedback).
+
 ###### Group Members: Parul Shandilya, Priyansi Singh, Komal Kungwani, Amisha Gupta
 ### ii. Constraints
 #### (a) All student may not fill feedback form.
@@ -31,16 +35,15 @@ Program outcome for a course.
 #### (c) Calculating Direct Weight from direct feedback obtained.
 #### (d) Calculating weighted sum for CO with respect to AC for every course.
 #### (e) Calculating indirect weight and generating course code table(from direct feedback) and end of course survey table(indirect feedback).
-### iv. Output
-#### (a) NBA Accreditation Report containing course code table(from direct feedback) and end of course survey table(indirect feedback).
+
 
 ## GUI –
-● Home page
-● Faculty Login
-● Student Login
-● About Us
-● Upload pages for CO and PO statements, marks, CO/AC and correlation matrix.
-● Feedback Form page.
+###### Home page
+###### Faculty Login
+###### Student Login
+###### About Us
+###### Upload pages for CO and PO statements, marks, CO/AC and correlation matrix.
+###### Feedback Form page.
 
 https://websiteforstudents.com/how-to-install-eclipse-oxygen-ide-on-ubuntu-167-04-17-10-18-04/
 #### Step 1: Install Java JDK8
