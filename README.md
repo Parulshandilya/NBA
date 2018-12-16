@@ -5,7 +5,7 @@ This is an application intended for college faculty members to ease the process 
 Generating Accreditation,matching CIF outcome with program outcome,taking feedback from students on their program outcome, taking indirect feedback from teacher etc
 
 #### Input
-(a) Student feedback (Feedback about the level of course outcome attained.)
+(a) Student feedback (Feedback about the level of course outcome attained.)<br/>
 (b) Marks List (Scores of students of a course for particular batch.)
 ###### (c) CO List (Course outcome for a course.)
 ###### (d) PO List (Program outcome for a course.)
