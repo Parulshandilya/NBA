@@ -12,14 +12,11 @@ Generating Accreditation,matching CIF outcome with program outcome,taking feedba
 (e) Correlation Matrix (Correlation between CO and PO)<br/>
 (f) CO vs AC (Assessment Component) Details<br/>
 
-##### Development Tool:
-Eclipse Oxygen 
-##### API: 
-Apache POI 
-##### Web server tool: 
-Apache Tomcat 
-##### Skills Used: 
-Java, HTML ,CSS 
+#### Tools and Technologies
+Development Tool: Eclipse Oxygen<br/> 
+API: Apache POI <br/>
+Web server tool: Apache Tomcat <br/>
+Skills Used: Java, HTML ,CSS <br/>
 
 #### Output
 (a) NBA Accreditation Report containing course code table(from direct feedback) and end of course survey table(indirect feedback).
