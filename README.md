@@ -6,11 +6,11 @@ Generating Accreditation,matching CIF outcome with program outcome,taking feedba
 
 #### Input
 (a) Student feedback (Feedback about the level of course outcome attained.)<br/>
-(b) Marks List (Scores of students of a course for particular batch.)
-###### (c) CO List (Course outcome for a course.)
-###### (d) PO List (Program outcome for a course.)
-###### (e) Correlation Matrix (Correlation between CO and PO)
-###### (f) CO vs AC (Assessment Component) Details
+(b) Marks List (Scores of students of a course for particular batch.)<br/>
+(c) CO List (Course outcome for a course.)<br/>
+(d) PO List (Program outcome for a course.)<br/>
+(e) Correlation Matrix (Correlation between CO and PO)<br/>
+(f) CO vs AC (Assessment Component) Details<br/>
 
 ##### Development Tool: Eclipse Oxygen 
 ##### API: Apache POI 
