@@ -1,27 +1,33 @@
 # NBA-Accreditition-Report-Generation
+### The system generates the report of NBA accreditation
 This is an application intended for college faculty members to ease the process of generating NBA report by taking input from faculty and student. 
+### i. Input
+#### (a) Student feedback
+Feedback about the level of course outcome attained.
+#### (b) Marks List
+Scores of students of a course for particular batch.
+#### (c) CO List
+Course outcome for a course.
+#### (d) PO List
+Program outcome for a course.
+#### (e) Correlation Matrix (Correlation between CO and PO)
+#### (f) CO vs AC (Assessment Component) Details
+
+
 ##### Development Tool: Eclipse Oxygen 
 ##### API: Apache POI 
 ##### Web server tool: Apache Tomcat 
 ##### Skills Used: Java, HTML ,CSS 
 
-Group Members:
-###### Parul Shandilya, Priyansi Singh, Komal Kungwani, Amisha Gupta
+###### Group Members: Parul Shandilya, Priyansi Singh, Komal Kungwani, Amisha Gupta
 
 ## I.
-### i. Functional – The system generates the report of NBA accreditation
+
 #### (a) Generating Accreditation,matching CIF outcome with program outcome,taking feedback from students on their program outcome, taking indirect feedback from teacher etc
  ### ii. Domain – reflect characteristics of application domain
 #### (a) Branch wise course outcomes
-#### (b) Standard for storing feedback forms
+
 ## II.
-### i. Input
-#### (a) Student feedback
-#### (b) Marks List
-#### (c) CO List
-#### (d) PO List
-#### (e) Correlation Matrix (Correlation between CO and PO)
-#### (f) CO vs AC (Assessment Component) Details
 ### ii. Constraints
 #### (a) All student may not fill feedback form.
 #### (b) Faculty has to provide details ( like Excel Sheets) in the format as mentioned.
