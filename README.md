@@ -80,7 +80,7 @@ mysql-connector-java-8.0.13.zip
 Download Link: https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.0.13.zip
 
 ##### Step4 Install Tomcat
-<br/> Step1 Download Tomcat From here: http://mirrors.estointernet.in/apache/tomcat/tomcat-7/v7.0.92/bin/apache-tomcat-7.0.92.tar.gz
+<br/> <b>Step1<b/> Download Tomcat From here: http://mirrors.estointernet.in/apache/tomcat/tomcat-7/v7.0.92/bin/apache-tomcat-7.0.92.tar.gz
 <br/> Step2 Extract the tar file
 <br/> Step3 Now make a directory at usr/local/tomcat <br/> sudo mkdir /usr/local/tomcat
 <br/> Step4 move the extracted file to the directory <br/> sudo mv apache-tomcat-7.0.92 /usr/local/tomcat
