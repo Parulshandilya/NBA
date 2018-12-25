@@ -90,13 +90,9 @@ sudo mv apache-tomcat-7.0.92 /usr/local/tomcat
 ###### Step5 Move to that directory
 cd /usr/local/tomcat
 cd /usr/local/tomcat/apache-tomcat-7.0.92
-###### Step6 Run these commands
-sudo ln -s /var/lib/tomcat7/conf conf <br/>
-sudo ln -s /tc/tomcat7/policy.d/03catalina.policy/conf/catalina.policy <br/>
-sudo ln -s /var/log/tomcat7 log <br/>
-sudo chmod -R 777 /usr/local/tomcat/apache*/conf <br/>
+###### Step6 Run these commands <br/> sudo ln -s /var/lib/tomcat7/conf conf <br/> sudo ln -s /tc/tomcat7/policy.d/03catalina.policy/conf/catalina.policy <br/> sudo ln -s /var/log/tomcat7 log <br/> sudo chmod -R 777 /usr/local/tomcat/apache*/conf <br/>
 
-###### Step7 Configuring the Server 1  From the Eclipse main menu choose File > New > Other...<br/> 2  Select Server > Server.<br/> 3  Click Next. <br/> 4  Select Tomcat vx.x Server<br/> 5  Click Next. <br/> 6  Browse to the folder of your Tomcat installation. (or type /usr/local/tomcat/apace-tomcat-7.0.92)<br/> 7  Select Finish.<br/>
+###### Step7 Configuring the Server <br/> 1  From the Eclipse main menu choose File > New > Other...<br/> 2  Select Server > Server.<br/> 3  Click Next. <br/> 4  Select Tomcat vx.x Server<br/> 5  Click Next. <br/> 6  Browse to the folder of your Tomcat installation. (or type /usr/local/tomcat/apace-tomcat-7.0.92)<br/> 7  Select Finish.<br/>
 
 #### Code
 ###### 1 File->New->Dynamic Web Project
