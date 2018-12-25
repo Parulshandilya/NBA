@@ -37,7 +37,7 @@ Feedback Form page.<br/>
 
 #### Dependencies
 
-https://websiteforstudents.com/how-to-install-eclipse-oxygen-ide-on-ubuntu-167-04-17-10-18-04/
+
 ##### Step 1: Install Java JDK8
 You must have Java installed on the system before installing Apache Tomcat on a Linux VPS. Tomcat 9 required Java 8 or later version to work. You can check and verify that Java is installed with the right version.
 
@@ -81,26 +81,20 @@ mysql-connector-java-8.0.13.zip
 Download Link: https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.0.13.zip
 
 ##### Install Tomcat
-###### Step1
-Download Tomcat From here: http://mirrors.estointernet.in/apache/tomcat/tomcat-7/v7.0.92/bin/apache-tomcat-7.0.92.tar.gz
-###### Step2
-Extract the tar file
-###### Step3
-Now make a directory at usr/local/tomcat
+###### Step1 Download Tomcat From here: http://mirrors.estointernet.in/apache/tomcat/tomcat-7/v7.0.92/bin/apache-tomcat-7.0.92.tar.gz
+###### Step2 Extract the tar file
+###### Step3 Now make a directory at usr/local/tomcat
 sudo mkdir /usr/local/tomcat
-###### Step4
-move the extracted file to the directory
+###### Step4 move the extracted file to the directory
 sudo mv apache-tomcat-7.0.92 /usr/local/tomcat
-###### Step5
-Move to that directory
+###### Step5 Move to that directory
 cd /usr/local/tomcat
 cd /usr/local/tomcat/apache-tomcat-7.0.92
-###### Step6
-Run these commands
-sudo ln -s /var/lib/tomcat7/conf conf
-sudo ln -s /tc/tomcat7/policy.d/03catalina.policy/conf/catalina.policy
-sudo ln -s /var/log/tomcat7 log
-sudo chmod -R 777 /usr/local/tomcat/apache*/conf
+###### Step6 Run these commands
+sudo ln -s /var/lib/tomcat7/conf conf <br/>
+sudo ln -s /tc/tomcat7/policy.d/03catalina.policy/conf/catalina.policy <br/>
+sudo ln -s /var/log/tomcat7 log <br/>
+sudo chmod -R 777 /usr/local/tomcat/apache*/conf <br/>
 
 ##### Step7 Configuring the Server
 1  From the Eclipse main menu choose File > New > Other...<br/>
@@ -118,6 +112,7 @@ sudo chmod -R 777 /usr/local/tomcat/apache*/conf
 (For front end)
 
 #### References
+https://websiteforstudents.com/how-to-install-eclipse-oxygen-ide-on-ubuntu-167-04-17-10-18-04/
 https://www.youtube.com/watch?v=D0OfTZuIDcs
 https://help.eclipse.org/neon/index.jsp?topic=%2Forg.eclipse.stardust.docs.wst%2Fhtml%2Fwst-integration%2Fconfiguration.html
 https://www.youtube.com/watch?v=HYSrsxhyEik&index=34&list=PLsyeobzWxl7pUPF2xjjJiG4BKC9x_GY46
