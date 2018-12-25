@@ -106,14 +106,14 @@ https://www.quora.com/How-do-I-create-a-basic-login-and-register-page-in-HTML <b
 #### ER Diagram
 
  <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/ER%20Diagram.png" width="500" title="hover text">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/ScreenShots/ER%20Diagram.png" width="500" title="hover text">
 </p>
 
 
 #### Class Diagram
 
  <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/Class%20Diagram%20for%20NBA%20Accreditation%20.png" width="500" title="hover text">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/ScreenShots/Class%20Diagram%20for%20NBA%20Accreditation%20.png" width="500" title="hover text">
 </p>
 
 ## ScreenShot
@@ -136,7 +136,7 @@ faculty options page.If the username or password is incorrect then Invalid usern
 statement is displayed.
 
  <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/facultyLogin.png" width="500" title="hover text">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/ScreenShots/facultyLogin.png" width="500" title="hover text">
 </p>
 
 ### Faculty Page
@@ -145,7 +145,7 @@ marks,CO/AC etc.Second button is the logout button which will redirect to the ho
 button is the generate report button which will give us the course attainment for every course and
 the contribution of every PO for a course.
  <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/facultyPage.png" width="500" title="hover text">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/ScreenShots/facultyPage.png" width="500" title="hover text">
 </p>
 
 ### Faculty
@@ -153,14 +153,14 @@ This page contains the entry for course,branch,batch and class size.
 The logout button will lead to home page and next button will lead to the
 Upload pages.
  <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/faculty.png" width="500" title="hover text">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/ScreenShots/faculty.png" width="500" title="hover text">
 </p>
 
 ### Upload CO/AC List
 Faculty has to upload file in the format as mentioned on the page.Click on upload to upload CO/AC
 and you will be directed to the page which contains CO list upload options.
  <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/COAC.png" width="500" title="hover text">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/ScreenShots/COAC.png" width="500" title="hover text">
 </p>
 
 
@@ -168,7 +168,7 @@ and you will be directed to the page which contains CO list upload options.
 Faculty has to upload file in the format as mentioned on the page.The next page will lead to PO list
 upload.
  <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/COList.png" width="500" title="hover text">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/ScreenShots/COList.png" width="500" title="hover text">
 </p>
 
 ### Upload Correlation matrix
@@ -176,7 +176,7 @@ Faculty has to upload file in the format as mentioned on the page.In the last , 
 “finish” button in order to finish the uploading process. ​ 1-​​ represents low correlation, ​ 2 ​ -represents
 moderate correlation.​ 3-​​ represents high correlation.
  <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/CorrelationMatrix.png" width="500" title="hover text">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/ScreenShots/CorrelationMatrix.png" width="500" title="hover text">
 </p>
 
 
@@ -188,7 +188,7 @@ moderate correlation.​ 3-​​ represents high correlation.
 Faculty has to upload file in the format as mentioned on the page.The next page will lead to
 correlation matrix upload.
  <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/POList.png" width="500" title="hover text">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/ScreenShots/POList.png" width="500" title="hover text">
 </p>
 
 ### Upload Marks
@@ -196,7 +196,7 @@ Faculty has to upload file in the format as mentioned on the page.There is an ex
 corresponding to marks list.Click on upload button to upload marks list and you will be directed to
 next page to upload CO/AC.
  <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/marks.png" width="500" title="hover text">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/ScreenShots/marks.png" width="500" title="hover text">
 </p>
 
 ## Student
@@ -208,7 +208,7 @@ student options page.If the username or password is incorrect then Invalid usern
 statement is displayed.
 
  <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/studentLogin.png" width="500" title="hover text">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/ScreenShots/studentLogin.png" width="500" title="hover text">
 </p>
 
 ### Student Page
@@ -216,7 +216,7 @@ This page contains options to fill out course and batch for which feedback is to
 contains two buttons The logout button will take you to the homepage and the feedback form button
 will take you to the feedback form page.
  <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/studentPage.png" width="500" title="hover text">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/ScreenShots/studentPage.png" width="500" title="hover text">
 </p>
 
 ### Student Feedback
@@ -225,7 +225,7 @@ This form contains the parameter for a student feedback in the form of stars cor
 question.The student can fill the form and then click on submit button to give their feedback.
 
  <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/studentFeedback.png" width="500" title="hover text">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/ScreenShots/studentFeedback.png" width="500" title="hover text">
 </p>
 
 
@@ -233,7 +233,7 @@ question.The student can fill the form and then click on submit button to give t
 ### NBA Report
 
  <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/NBAReport.png" width="500" title="hover text">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/ScreenShots/NBAReport.png" width="500" title="hover text">
 </p>
 
 
