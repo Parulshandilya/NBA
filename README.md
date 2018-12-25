@@ -80,19 +80,18 @@ mysql-connector-java-8.0.13.zip
 Download Link: https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.0.13.zip
 
 ##### Step4 Install Tomcat
-###### Step1 Download Tomcat From here: http://mirrors.estointernet.in/apache/tomcat/tomcat-7/v7.0.92/bin/apache-tomcat-7.0.92.tar.gz
-###### Step2 Extract the tar file
-###### Step3 Now make a directory at usr/local/tomcat <br/> sudo mkdir /usr/local/tomcat
-###### Step4 move the extracted file to the directory <br/> sudo mv apache-tomcat-7.0.92 /usr/local/tomcat
-###### Step5 Move to that directory <br/> cd /usr/local/tomcat <br/> cd /usr/local/tomcat/apache-tomcat-7.0.92
-###### Step6 Run these commands <br/> sudo ln -s /var/lib/tomcat7/conf conf <br/> sudo ln -s /tc/tomcat7/policy.d/03catalina.policy/conf/catalina.policy <br/> sudo ln -s /var/log/tomcat7 log <br/> sudo chmod -R 777 /usr/local/tomcat/apache*/conf <br/>
-###### Step7 Configuring the Server <br/> 1  From the Eclipse main menu choose File > New > Other...<br/> 2  Select Server > Server.<br/> 3  Click Next. <br/> 4  Select Tomcat vx.x Server<br/> 5  Click Next. <br/> 6  Browse to the folder of your Tomcat installation. (or type /usr/local/tomcat/apace-tomcat-7.0.92)<br/> 7  Select Finish.<br/>
+<br/> Step1 Download Tomcat From here: http://mirrors.estointernet.in/apache/tomcat/tomcat-7/v7.0.92/bin/apache-tomcat-7.0.92.tar.gz
+<br/> Step2 Extract the tar file
+<br/> Step3 Now make a directory at usr/local/tomcat <br/> sudo mkdir /usr/local/tomcat
+<br/> Step4 move the extracted file to the directory <br/> sudo mv apache-tomcat-7.0.92 /usr/local/tomcat
+<br/> Step5 Move to that directory <br/> cd /usr/local/tomcat <br/> cd /usr/local/tomcat/apache-tomcat-7.0.92
+<br/> Step6 Run these commands <br/> sudo ln -s /var/lib/tomcat7/conf conf <br/> sudo ln -s /tc/tomcat7/policy.d/03catalina.policy/conf/catalina.policy <br/> sudo ln -s /var/log/tomcat7 log <br/> sudo chmod -R 777 /usr/local/tomcat/apache*/conf <br/>
+<br/> Step7 Configuring the Server <br/> 1  From the Eclipse main menu choose File > New > Other...<br/> 2  Select Server > Server.<br/> 3  Click Next. <br/> 4  Select Tomcat vx.x Server<br/> 5  Click Next. <br/> 6  Browse to the folder of your Tomcat installation. (or type /usr/local/tomcat/apace-tomcat-7.0.92)<br/> 7  Select Finish.<br/>
 
 #### Code
-###### 1 File->New->Dynamic Web Project
-###### 2 Write Project Name
-###### 3 In your project in JavaScript Resources right click in webContent new JSP File
-(For front end)
+<br/> 1 File->New->Dynamic Web Project
+<br/> 2 Write Project Name
+<br/> 3 In your project in JavaScript Resources right click in webContent new JSP File
 
 #### References
 https://websiteforstudents.com/how-to-install-eclipse-oxygen-ide-on-ubuntu-167-04-17-10-18-04/ <br/>
