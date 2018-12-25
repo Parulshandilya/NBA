@@ -123,17 +123,21 @@ https://www.quora.com/How-do-I-create-a-basic-login-and-register-page-in-HTML <b
  <p align="center">
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/Home.png" width="500" title="hover text">
 </p>
+
 ## Faculty
+
 ### Faculty Login
 
  <p align="center">
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/facultyLogin.png" width="500" title="hover text">
 </p>
+
 ### Faculty Page
 
  <p align="center">
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/facultyPage.png" width="500" title="hover text">
 </p>
+
 ### Faculty
 
  <p align="center">
