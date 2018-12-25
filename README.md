@@ -119,6 +119,9 @@ https://www.quora.com/How-do-I-create-a-basic-login-and-register-page-in-HTML <b
 ## ScreenShot
 
 ### Home Page
+This is the homepage of our web application which contains the link to all the other pages of our
+app.This page contains two Buttons Faculty Login and Student Login.On pressing these buttons
+you will be directed to the respective login pages.
 
  <p align="center">
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/Home.png" width="500" title="hover text">
@@ -127,6 +130,10 @@ https://www.quora.com/How-do-I-create-a-basic-login-and-register-page-in-HTML <b
 ## Faculty
 
 ### Faculty Login
+This page is the Faculty Login page which contains username and password text boxes for
+faculty validation.If the username and password are correct then the user will be directed to the
+faculty options page.If the username or password is incorrect then Invalid username or password
+statement is displayed.
 
  <p align="center">
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/facultyLogin.png" width="500" title="hover text">
@@ -183,18 +190,27 @@ https://www.quora.com/How-do-I-create-a-basic-login-and-register-page-in-HTML <b
 ## Student
 
 ### Student Login Page
+This page is the Student Login page which contains username and password text boxes for
+student validation.If the username and password are correct then the user will be directed to the
+student options page.If the username or password is incorrect then Invalid username or password
+statement is displayed.
 
  <p align="center">
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/studentLogin.png" width="500" title="hover text">
 </p>
 
 ### Student Page
-
+This page contains options to fill out course and batch for which feedback is to be filled.It
+contains two buttons The logout button will take you to the homepage and the feedback form button
+will take you to the feedback form page.
  <p align="center">
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/studentPage.png" width="500" title="hover text">
 </p>
 
 ### Student Feedback
+
+This form contains the parameter for a student feedback in the form of stars corresponding to each
+question.The student can fill the form and then click on submit button to give their feedback.
 
  <p align="center">
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/studentFeedback.png" width="500" title="hover text">
