@@ -140,32 +140,41 @@ statement is displayed.
 </p>
 
 ### Faculty Page
-
+This page consists of three buttons first to upload various documents like
+marks,CO/AC etc.Second button is the logout button which will redirect to the home page.The last
+button is the generate report button which will give us the course attainment for every course and
+the contribution of every PO for a course.
  <p align="center">
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/facultyPage.png" width="500" title="hover text">
 </p>
 
 ### Faculty
-
+This page contains the entry for course,branch,batch and class size.
+The logout button will lead to home page and next button will lead to the
+Upload pages.
  <p align="center">
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/faculty.png" width="500" title="hover text">
 </p>
 
 ### Upload CO/AC List
-
+Faculty has to upload file in the format as mentioned on the page.Click on upload to upload CO/AC
+and you will be directed to the page which contains CO list upload options.
  <p align="center">
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/COAC.png" width="500" title="hover text">
 </p>
 
 
 ### Upload COList
-
+Faculty has to upload file in the format as mentioned on the page.The next page will lead to PO list
+upload.
  <p align="center">
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/COList.png" width="500" title="hover text">
 </p>
 
 ### Upload Correlation matrix
-
+Faculty has to upload file in the format as mentioned on the page.In the last , he has to press the
+“finish” button in order to finish the uploading process. ​ 1-​​ represents low correlation, ​ 2 ​ -represents
+moderate correlation.​ 3-​​ represents high correlation.
  <p align="center">
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/CorrelationMatrix.png" width="500" title="hover text">
 </p>
@@ -176,13 +185,16 @@ statement is displayed.
 
 
 ### Upload POList
-
+Faculty has to upload file in the format as mentioned on the page.The next page will lead to
+correlation matrix upload.
  <p align="center">
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/POList.png" width="500" title="hover text">
 </p>
 
 ### Upload Marks
-
+Faculty has to upload file in the format as mentioned on the page.There is an example
+corresponding to marks list.Click on upload button to upload marks list and you will be directed to
+next page to upload CO/AC.
  <p align="center">
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/marks.png" width="500" title="hover text">
 </p>
