@@ -166,11 +166,6 @@ https://www.quora.com/How-do-I-create-a-basic-login-and-register-page-in-HTML <b
 
 
 
-### NBA Report
-
- <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/NBAReport.png" width="500" title="hover text">
-</p>
 
 
 ### Upload POList
@@ -207,6 +202,11 @@ https://www.quora.com/How-do-I-create-a-basic-login-and-register-page-in-HTML <b
 
 
 
+### NBA Report
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/NBAReport.png" width="500" title="hover text">
+</p>
 
 
 
