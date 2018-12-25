@@ -101,13 +101,13 @@ cd /usr/local/tomcat/apache-tomcat-7.0.92
 (For front end)
 
 #### References
-https://websiteforstudents.com/how-to-install-eclipse-oxygen-ide-on-ubuntu-167-04-17-10-18-04/
-https://www.youtube.com/watch?v=D0OfTZuIDcs
-https://help.eclipse.org/neon/index.jsp?topic=%2Forg.eclipse.stardust.docs.wst%2Fhtml%2Fwst-integration%2Fconfiguration.html
-https://www.youtube.com/watch?v=HYSrsxhyEik&index=34&list=PLsyeobzWxl7pUPF2xjjJiG4BKC9x_GY46
-https://www.codejava.net/java-ee/servlet/eclipse-file-upload-servlet-with-apache-common-file-upload
-https://www.journaldev.com/1964/servlet-upload-file-download-example
-https://www.quora.com/How-do-I-create-a-basic-login-and-register-page-in-HTML
+https://websiteforstudents.com/how-to-install-eclipse-oxygen-ide-on-ubuntu-167-04-17-10-18-04/ <br/>
+https://www.youtube.com/watch?v=D0OfTZuIDcs <br/>
+https://help.eclipse.org/neon/index.jsp?topic=%2Forg.eclipse.stardust.docs.wst%2Fhtml%2Fwst-integration%2Fconfiguration.html <br/>
+https://www.youtube.com/watch?v=HYSrsxhyEik&index=34&list=PLsyeobzWxl7pUPF2xjjJiG4BKC9x_GY46 <br/>
+https://www.codejava.net/java-ee/servlet/eclipse-file-upload-servlet-with-apache-common-file-upload <br/>
+https://www.journaldev.com/1964/servlet-upload-file-download-example <br/>
+https://www.quora.com/How-do-I-create-a-basic-login-and-register-page-in-HTML <br/>
 
 
 #### ER Diagram
