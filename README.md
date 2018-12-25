@@ -124,7 +124,7 @@ app.This page contains two Buttons Faculty Login and Student Login.On pressing t
 you will be directed to the respective login pages.
 
  <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/Home.png" width="500" title="hover text">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/ScreenShots/Home.png" width="500" title="hover text">
 </p>
 
 ## Faculty
