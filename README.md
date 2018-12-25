@@ -96,14 +96,7 @@ sudo ln -s /tc/tomcat7/policy.d/03catalina.policy/conf/catalina.policy <br/>
 sudo ln -s /var/log/tomcat7 log <br/>
 sudo chmod -R 777 /usr/local/tomcat/apache*/conf <br/>
 
-##### Step7 Configuring the Server
-1  From the Eclipse main menu choose File > New > Other...<br/>
-2  Select Server > Server.<br/>
-3  Click Next. <br/>
-4  Select Tomcat vx.x Server<br/>
-5  Click Next. <br/>
-6  Browse to the folder of your Tomcat installation. (or type /usr/local/tomcat/apace-tomcat-7.0.92)<br/>
-7  Select Finish.<br/>
+###### Step7 Configuring the Server 1  From the Eclipse main menu choose File > New > Other...<br/> 2  Select Server > Server.<br/> 3  Click Next. <br/> 4  Select Tomcat vx.x Server<br/> 5  Click Next. <br/> 6  Browse to the folder of your Tomcat installation. (or type /usr/local/tomcat/apace-tomcat-7.0.92)<br/> 7  Select Finish.<br/>
 
 #### Code
 ###### 1 File->New->Dynamic Web Project
@@ -135,6 +128,29 @@ https://www.quora.com/How-do-I-create-a-basic-login-and-register-page-in-HTML
 </p>
 
 ## ScreenShot
+
+### Home Page
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/Home.png" width="500" title="hover text">
+</p>
+## Faculty
+### Faculty Login
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/facultyLogin.png" width="500" title="hover text">
+</p>
+### Faculty Page
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/facultyPage.png" width="500" title="hover text">
+</p>
+### Faculty
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/faculty.png" width="500" title="hover text">
+</p>
+
 ### Upload CO/AC List
 
  <p align="center">
@@ -154,11 +170,7 @@ https://www.quora.com/How-do-I-create-a-basic-login-and-register-page-in-HTML
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/CorrelationMatrix.png" width="500" title="hover text">
 </p>
 
-### Home Page
 
- <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/Home.png" width="500" title="hover text">
-</p>
 
 
 ### NBA Report
@@ -174,29 +186,24 @@ https://www.quora.com/How-do-I-create-a-basic-login-and-register-page-in-HTML
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/POList.png" width="500" title="hover text">
 </p>
 
-### Faculty
-
- <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/faculty.png" width="500" title="hover text">
-</p>
-
-
-### Faculty Login
-
- <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/facultyLogin.png" width="500" title="hover text">
-</p>
-
-### Faculty Page
-
- <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/facultyPage.png" width="500" title="hover text">
-</p>
-
 ### Upload Marks
 
  <p align="center">
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/marks.png" width="500" title="hover text">
+</p>
+
+## Student
+
+### Student Login Page
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/studentLogin.png" width="500" title="hover text">
+</p>
+
+### Student Page
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/studentPage.png" width="500" title="hover text">
 </p>
 
 ### Student Feedback
@@ -205,16 +212,8 @@ https://www.quora.com/How-do-I-create-a-basic-login-and-register-page-in-HTML
   <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/studentFeedback.png" width="500" title="hover text">
 </p>
 
-### Student Login Page
-
- <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/studentLogin.png" width="500" title="hover text">
-</p>
 
 
-### Student Page
 
- <p align="center">
-  <img src="https://github.com/Parulshandilya/NBA-Accreditition-Report-Generation/blob/master/images/studentPage.png" width="500" title="hover text">
-</p>
+
 
