@@ -2,6 +2,7 @@
 ### The system generates the report of NBA accreditation
 This is an application intended for college faculty members to ease the process of generating NBA report by taking input from faculty and student. 
 Generating Accreditation,matching CIF outcome with program outcome,taking feedback from students on their program outcome, taking indirect feedback from teacher etc
+This is helpful to rate a college.
 ### Input
 (a) Student feedback (Feedback about the level of course outcome attained.)<br/>
 (b) Marks List (Scores of students of a course for particular batch.)<br/>
